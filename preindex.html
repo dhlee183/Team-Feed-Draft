@@ -88,14 +88,17 @@
 
     <script>
     // https://console.firebase.google.com/project/team-feed/
+  // Initialize Firebase
     var config = {
-        apiKey: "AIzaSyBEb-mCpF6idbFnd99pdMci9P97LsECPlc",
-        authDomain: "team-feed.firebaseapp.com",
-        databaseURL: "https://team-feed.firebaseio.com",
-        storageBucket: "team-feed.appspot.com",
-        messagingSenderId: "901779519021"
+        apiKey: "AIzaSyBreZO-Ja_kncnrv2Uk26-k8hQZllaqhQE",
+        authDomain: "team-feed-draft.firebaseapp.com",
+        databaseURL: "https://team-feed-draft.firebaseio.com",
+        storageBucket: "",
+        messagingSenderId: "395509922588"
     };
     firebase.initializeApp(config);
+
+    var database = firebase.database();
 
     var provider = new firebase.auth.GoogleAuthProvider();
 
